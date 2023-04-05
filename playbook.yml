@@ -1,0 +1,12 @@
+---
+- hosts: web
+  name: Web servers
+  become: true
+  roles:
+    - common
+
+- hosts: db
+  name: DB servers
+  become: true
+  roles:
+    - common

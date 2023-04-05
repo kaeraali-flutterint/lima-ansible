@@ -1,0 +1,11 @@
+[web]
+lima-myweb
+
+[web:vars]
+ansible_ssh_common_args='-F {{ lookup('env','HOME') }}/.lima/myweb/ssh.config'
+
+[db]
+lima-mydb
+
+[db:vars]
+ansible_ssh_common_args='-F {{ lookup('env','HOME') }}/.lima/mydb/ssh.config'

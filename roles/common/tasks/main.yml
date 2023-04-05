@@ -1,0 +1,5 @@
+---
+- name: Install sl
+  ansible.builtin.yum:
+    name: sl
+    state: present
